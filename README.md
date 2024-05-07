@@ -29,344 +29,268 @@ Publish the website in the LocalHost.
 Developed By:SETHUKKARASI C
 Register Number:212223230201
 
-home.html:
+homepage.html:
 ```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Stylesheet-->
-    <style media="screen">
-        *,
-        *:before,
-        *:after {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #080710;
-        }
-
-        .background {
-            width: 430px;
-            height: 520px;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            top: 50%;
-        }
-
-        .background .shape {
-            height: 200px;
-            width: 200px;
-            position: absolute;
-            border-radius: 50%;
-        }
-
-        .shape:first-child {
-            background: linear-gradient(#1845ad,
-                    #23a2f6);
-            left: -80px;
-            top: -80px;
-        }
-
-        .shape:last-child {
-            background: linear-gradient(to right,
-                    #ff512f,
-                    #f09819);
-            right: -30px;
-            bottom: -80px;
-        }
-
-        form {
-            height: 520px;
-            width: 400px;
-            background-color: rgba(255, 255, 255, 0.13);
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-            padding: 50px 35px;
-        }
-
-        .bottomdiv {
-            background-color: rgb(66, 223, 218);
-            color: #007cb9;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 230px;
-        }
-
-        form * {
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            letter-spacing: 0.5px;
-            outline: none;
-            border: none;
-        }
-
-        form h3 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 42px;
-            text-align: center;
-        }
-
-        label {
-            display: block;
-            margin-top: 30px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        input {
-            display: block;
-            height: 50px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.07);
-            border-radius: 3px;
-            padding: 0 10px;
-            margin-top: 8px;
-            font-size: 14px;
-            font-weight: 300;
-        }
-
-        ::placeholder {
-            color: #e5e5e5;
-        }
-
-        button {
-            margin-top: 50px;
-            width: 100%;
-            background-color: #ffffff;
-            color: #080710;
-            padding: 15px 0;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .social {
-            margin-top: 30px;
-            display: flex;
-        }
-
-        .social div {
-            background: red;
-            width: 150px;
-            border-radius: 3px;
-            padding: 5px 10px 10px 5px;
-            background-color: rgba(255, 255, 255, 0.27);
-            color: #eaf0fb;
-            text-align: center;
-        }
-
-        .social div:hover {
-            background-color: rgba(255, 255, 255, 0.47);
-        }
-
-        .social .fb {
-            margin-left: 25px;
-        }
-
-        .social i {
-            margin-right: 4px;
-        }
-
-        .name {
-            margin-left: 59px;
-            margin-right: 100px;
-            font-size: 32px;
-            color: aliceblue;
-        }
-
-        .bottomdiv {
-            background-color: rgb(66, 223, 218);
-            color: #007cb9;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 230px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body>
-    <nav class="navbar justify-content-end navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+<body background="giphy.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <img src="download.png" alt="">
-            <div class="name">Board of Control for Cricket &emsp;&emsp;&emsp;&emsp;in India</div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="nav justify-content-end">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="Homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trophies.html">Trophies</a>
+                        <a class="nav-link" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fours.html">Most Fours</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stars.html">Stars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="trophy.html">Former Champions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    <form>
-        <h3>Login Here</h3>
-
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
-
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
-
-        <button>Log In</button>
-        <div class="social">
-            <div class="go"><i class="fab fa-google"></i> Google</div>
-            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+    <h1 class="text-center font-weight-bold">
+        10 TEAMS ONE TROPHY<br>
+        NO SCORE IS SAFE HERE <br>
+        THE CRICKET TOUNAMENT THAT YOU HAVE EVER SEEN
+    </h1>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <img src="ipl-trophy.png" alt="Center Image" class="img-fluid">
+            </div>
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <!-- Add images around the center image -->
+                    <img src="CSKoutline.png" alt="Image" width="300px" class="img-fluid">
+                    <img src="RCBoutline.png" alt="Image" class="img-fluid">
+                    <img src="MIoutline.png" alt="Image" class="img-fluid">
+                    <img src="PBKSoutline.png" alt="Image" class="img-fluid">
+                    <img src="DCoutline.png" alt="Image" class="img-fluid">
+                    <img src="KKRoutline.png" alt="Image" class="img-fluid">
+                    <img src="SRHoutline.png" alt="Image" class="img-fluid">
+                    <img src="RRoutline.png" alt="Image" class="img-fluid">
+                    <img src="GToutline.png" alt="Image" class="img-fluid">
+                    <img src="LSGoutline.png" alt="Image" class="img-fluid">
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
 ```
 
-trophies.html:
+century.html:
 ```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Stylesheet-->
-    <style media="screen">
-        .name {
-            margin-left: 59px;
-            margin-right: 100px;
-            font-size: 32px;
-            color: aliceblue;
-        }
-
-        .box {
-            border-color: rgb(0, 34, 128);
-            border-width: 2px;
-            border-style: solid;
-            display: inline-block;
-            width: 414px;
-            background-color: rgb(166, 182, 234);
-            cursor: pointer;
-        }
-
-        .product {
-
-            text-align: center;
-        }
-
-        .heading2 {
-            padding-top: 100px;
-            padding-bottom: 10px;
-            text-align: center;
-            color: #007cb9;
-        }
-
-        .bottomdiv {
-            background-color: rgb(66, 223, 218);
-            color: #007cb9;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 230px;
-        }
-    </style>
 </head>
 
-<body background="backk.jpg">
-    <nav class="navbar justify-content-end navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+<body background="giphy4.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <img src="download.png" alt="">
-            <div class="name">Board of Control for Cricket in India</div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="nav justify-content-end">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link active" href="Homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Trophies</a>
+                        <a class="nav-link" aria-current="page" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fours.html">Most Fours</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stars.html">Stars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="trophy.html">Former Champions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <h1 class="heading2">TROPHIES</h1>
-    <br>
-    <div class="product">
-        <div class="box">
-            <b><img src="1.jpeg"></b>
-            <h1> ICC CRICKET WORLD CUP </h1>
-            <p>
-                The Cricket World Cup is a quadrennial event hosted by the ICC in the ODI format since 1975. There have
-                been thirteen editions of the tournament and India has participated in every edition. India have won it
-                twice in 1983 and 2011 while also finishing as runners-up in 2003 and 2023.
-            </p>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                aria-label="Slide 11"></button>
         </div>
-        <div class="box">
-            <img src="2.jpeg">
-            <h1> ICC t20 WORLD CUP </h1>
-            <p>India, led by MS Dhoni, made history by winning the first-ever T20 World Cup in 2007. They triumphed over
-                Pakistan in the final. India’s journey included just one loss in the tournament against New Zealand in
-                the Super 8s.</p>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Virat Kohli.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>VIRAT KOHLI</h5>
+                    <p>113 against RR in Jaipur.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Ruturaj Gaikwad.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>RUTURAJ GAIKWAD</h5>
+                    <p>108 against LSG in Chepauk.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Rohit Sharma.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ROHIT SHARMA</h5>
+                    <p>105 against CSK in Mumbai.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Suryakumar Yadav.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SURYA KUMAR YADAV</h5>
+                    <p>102 against SRH in Mumbai.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Yashasvi Jaiswal.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>YASHASVI JAISWAL</h5>
+                    <p>104 against MI in Jaipur.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Jos Buttler.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>JOS BUTTLER</h5>
+                    <p>107 against KKR in Kolkatta.<br>100 against RCB in Jaipur.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Will Jacks.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>WILL JACKS</h5>
+                    <p>100 against GT in Ahmedabad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Jonny Bairstow.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>JOHNNY BAIRSTOW</h5>
+                    <p>108 against KKR in Kolkatta.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Travis Head.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TRAVIS HEAD</h5>
+                    <p>102 against RCB in Bangaluru.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Sunil Narine.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SUNIL NARINE</h5>
+                    <p>109 against RR in Kolkatta.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Marcus Stoinis.png" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>MARCUS STOINIS</h5>
+                    <p>124 against CSK in Chepauk.</p>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <img src="3.jpeg">
-            <h1>ICC CHAMPIONS TROPHY</h1>
-            <p> India beat England by 5 runs at Edgbaston, winning their second title, although their first title, in
-                2002, was shared with Sri Lanka due to the final being washed out. Ravindra Jadeja was adjudged man of
-                the match and he also received the "Golden Ball" for taking the most wickets in the tournament. Shikhar
-                Dhawan received the "Golden Bat" for scoring the most runs in the series and was also adjudged the Man
-                of the Series for his consistent outstanding performances. MS Dhoni became the first captain in history
-                to win all three major ICC trophies – World Cup in 2011, World T20 in 2007 and this edition of the
-                Champions Trophy.</p>
-        </div>
-    </div>
-    <div class="bottomdiv">
-        <b>Copyrights @2024 and Developed by SETHUKKARASI C(212223230201)</b>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -376,129 +300,94 @@ trophies.html:
 </html>
 ```
 
-stars.html:
+orange.html:
 ```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Stylesheet-->
-    <style media="screen">
-        .name {
-            margin-left: 59px;
-            margin-right: 100px;
-            font-size: 32px;
-            color: aliceblue;
-        }
-
-        .person {
-            margin: 100px;
-            text-align: center;
-        }
-
-        .heading2 {
-            padding-top: 100px;
-            padding-bottom: 10px;
-            text-align: center;
-            color: #007cb9;
-        }
-
-        .bottomdiv {
-            background-color: rgb(66, 223, 218);
-            color: #007cb9;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 230px;
-        }
-
-        b,
-        p {
-            color: #faf4f4;
-            text-align: center;
-        }
-    </style>
 </head>
 
-<body background="backk.jpg">
-    <nav class="navbar justify-content-end navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+<body background="giphy6.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <img src="download.png" alt="">
-            <div class="name">Board of Control for Cricket in India</div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="nav justify-content-end">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link active" href="Homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trophies.html">Trophies</a>
+                        <a class="nav-link" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" aria-current="page" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fours.html">Most Fours</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Stars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="trophy.html">Former Champions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <h1 class="heading2">STARS OF INDIAN CRICKET</h1>
-    <table class="person">
-        <tr>
-            <td>
-                <img src="dhoni.jpeg">
-            </td>
-
-
-            <td>
-                <img src="virat.jpeg">
-            </td>
-
-            <td>
-                <img src="rutu.jpeg">
-            </td>
-            <td>
-                <img src="kapil.jpeg">
-            </td>
-            <td>
-                <img src="sachin.jpeg">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <b>Mahendra Singh Dhoni</b>
-                <p>winning Captain Of 3 ICC Trophies</p>
-            </td>
-            <td>
-                <b>Virat Kohli</b>
-                <p>First cricketer in World to Hit 50 ODI Centuries
-                </p>
-            </td>
-            <td>
-                <b>Ruturaj Gaikwad</b>
-                <p>Asian Games winning Captain</p>
-            </td>
-            <td>
-                <b>Kapil Dev</b>
-                <p>winning Captain of India’s First ICC Trophy</p>
-            </td>
-            <td>
-                <b>Sachin Tendulkar</b>
-                <p>First cricketer in World to Hit 100 Centuries</p>
-            </td>
-
-        </tr>
-    </table>
-    <div class="bottomdiv">
-        <b>Copyrights @2024 and Developed by SETHUKKARASI C(212223230201)</b>
+    <div class="d-flex">
+        <div class="card" style="width: 18rem;">
+            <img src="Virat Kohli.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">VIRAT KOHLI</h5>
+                <p class="card-text">Royal Challengers Bangaluru<br>542 runs</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Ruturaj Gaikwad.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">RUTURAJ GAIKWAD</h5>
+                <p class="card-text">Chennai Super Kings<br>541 runs</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Sanju Samson.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">SANJU SAMSON</h5>
+                <p class="card-text">Rajasthan Royals<br>464 runs</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Sunil Narine.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">SUNIL NARINE</h5>
+                <p class="card-text">Kolkata Knight Riders<br>461 runs</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Travis Head.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">TRAVIS HEAD</h5>
+                <p class="card-text">Sunrisers Hyderabad><br>444 runs</p>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -508,200 +397,422 @@ stars.html:
 </html>
 ```
 
-contact.html:
+purple.html:
 ```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Stylesheet-->
-    <style media="screen">
-        .overlay {
-            background-image: linear-gradient(to right, rgba(90, 100, 232, 0.9), rgba(84, 96, 234, 0.9));
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            position: relative;
-            padding: 110px 0;
-        }
-
-        h2.contact-title {
-            font-size: 35px;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 30px;
-        }
-
-        .contact-info p {
-            color: #ececec;
-        }
-
-        ul.contact-info {
-            margin-top: 30px;
-        }
-
-        ul.contact-info li {
-            margin-bottom: 22px;
-        }
-
-
-
-        ul.contact-info span {
-            font-size: 20px;
-            line-height: 26px;
-        }
-
-        ul.contact-info li {
-            display: flex;
-            width: 100%;
-        }
-
-        .info-left {
-            width: 10%;
-        }
-
-        .info-left i {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 30px;
-            color: #ffffff;
-        }
-
-        .info-right h4 {
-            color: #fff;
-            font-size: 18px;
-        }
-
-        .name {
-            margin-left: 59px;
-            margin-right: 100px;
-            font-size: 32px;
-            color: aliceblue;
-        }
-
-        .bottomdiv {
-            background-color: rgb(66, 223, 218);
-            color: #007cb9;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 230px;
-        }
-    </style>
 </head>
 
-<body>
-    <nav class="navbar justify-content-end navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+<body background="giphy5.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <img src="download.png" alt="">
-            <div class="name">Board of Control for Cricket in India</div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="nav justify-content-end">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link active" href="Homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trophies.html">Trophies</a>
+                        <a class="nav-link" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" aria-current="page" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fours.html">Most Fours</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stars.html">Stars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link" href="trophy.html">Former Champions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="section-bg" style="background-image: url(https://i.ibb.co/9p3Cnk9/slider-2.jpg);"
-        data-scroll-index="7">
-        <div class="overlay pt-100 pb-100 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div class="contact-info">
+    <div class="d-flex">
+        <div class="card" style="width: 18rem;">
+            <img src="Jasprit Bumrah.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">JASPRIT BUMRAH</h5>
+                <p class="card-text">Mumbai Indians<br>18 wickets</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Harshal Patel.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">HARSHAL PATEL</h5>
+                <p class="card-text">Punjab Kings<br>17 wickets</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Varun Chakaravarthy.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">VARUN CHAKARAVARTHY</h5>
+                <p class="card-text">Kolkata Knight Riders<br>16 wickets</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="T Natarajan.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">T NATARAJAN</h5>
+                <p class="card-text">Sunrisers Hyderabad<br>15 wickets</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Arshdeep Singh.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">ARSHDEEP SINGH</h5>
+                <p class="card-text">Punjab Kings<br>15 wickets</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
-                            <p>Board of Control for Cricket in India (BCCI) is the national governing body of cricket in
-                                India. Its headquarters is situated at the cricket centre in Churchgate, Mumbai. The
-                                BCCI is the wealthiest governing body of cricket in the world.
+</html>
+```
 
-                                The BCCI was established in 1 December 1928 at Madras (currently Chennai) under Act XXI
-                                of 1860 of Madras and was subsequently reregistered under the Tamil Nadu Societies
-                                Registration Act, 1975. It is a consortium of state cricket associations that select
-                                their own representatives who elect the BCCI president. It joined the Imperial Cricket
-                                Conference in 1926 which later became the International Cricket Council. The BCCI is an
-                                autonomous, private organization that does not fall under the purview of the National
-                                Sports Federation of India of Government of India and does not receive any grants from
-                                the Ministry of Youth Affairs and Sports. The BCCI is influential in international
-                                cricket. The International Cricket Council shares the largest part of its revenue with
-                                the BCCI. IPL run by BCCI is one of the wealthiest sports leagues in the world.</p>
-                            <h2 class="contact-title">Have Any Questions?</h2>
+fours.html:
+```
+<!DOCTYPE html>
+<html lang="en">
 
-                            <ul class="contact-info">
-                                <li>
-                                    <div class="info-left">
-                                        <i class="fas fa-mobile-alt"></i>
-                                    </div>
-                                    <div class="info-right">
-                                        <h4>+91 22 67598800
-                                            +91 22 61580300</h4>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info-left">
-                                        <i class="fas fa-at"></i>
-                                    </div>
-                                    <div class="info-right">
-                                        <h4>coa@bcci.tv</h4>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info-left">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="info-right">
-                                        <h4>4th Floor, Cricket Centre,
-                                            Wankhede Stadium
-                                            ‘D’ Road,
-                                            Churchgate
-                                            Mumbai- 400020
-                                            India</h4>
-                                    </div>
-                                </li>
-                            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body background="giphy2.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" aria-current="page" href="fours.html">Most Fours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trophy.html">Former Champions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex">
+        <div class="card" style="width: 18rem;">
+            <img src="Ruturaj Gaikwad.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">RUTURAJ GAIKWAD</h5>
+                <p class="card-text">Chennai Super Kings<br>57 fours</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Travis Head.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">TRAVIS HEAD</h5>
+                <p class="card-text">Sunrisers Hyderabad<br>53 fours</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Phil Salt.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">PHIL SALT</h5>
+                <p class="card-text">Kolkata Knight Riders<br>50 fours</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Virat Kohli.png" class="card-img-top bg-success" alt="...">
+            <div class="card-body bg-danger text-white text-center">
+                <h5 class="card-title">VIRAT KOHLI</h5>
+                <p class="card-text">Royal Challengers Bangaluru<br>48 fours</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="Sunil Narine.png" class="card-img-top bg-danger" alt="...">
+            <div class="card-body bg-success text-white text-center">
+                <h5 class="card-title">SUNIL NARINE</h5>
+                <p class="card-text">Kolkata Knight Riders<br>46 fours</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+```
+
+trophy.html:
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body background="giphy3.gif" style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="BCCI_logo.png" height="50px" alt="" srcset="">
+            <img src="ipl-logo-new-old.png" height="50px" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="century.html">Centuries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Stats
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="orange.html">Orange Cap</a></li>
+                            <li><a class="dropdown-item" href="purple.html">Purple Cap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fours.html">Most Fours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="trophy.html">Former Champions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="row mb-4">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="RRoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2008</h5>
+                            <p class="card-text">Champions:Rajasthan Royals</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center sele">
-                        <img src="bcci.jpeg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="DEC.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2009</h5>
+                            <p class="card-text">Champions:Deccan Chargers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="CSKoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2010</h5>
+                            <p class="card-text">Champions:Chennai Super Kings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="CSKoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2011</h5>
+                            <p class="card-text">Champions:Chennai Super Kings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="KKRoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2012</h5>
+                            <p class="card-text">Champions:Kolkata Knight Riders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="MIoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2013</h5>
+                            <p class="card-text">Champions:Mumbai Indians</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="KKRoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2014</h5>
+                            <p class="card-text">Champions:Kolkata Knight Riders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="MIoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2015</h5>
+                            <p class="card-text">Champions:Mumbai Indians</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="RRoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2016</h5>
+                            <p class="card-text">Champions:Sunrisers Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="MIoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2017</h5>
+                            <p class="card-text">Champions:Mumbai Indians</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="CSKoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2018</h5>
+                            <p class="card-text">Champions:Chennai Super Kings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="MIoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2019</h5>
+                            <p class="card-text">Champions:Mumbai Indians</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="MIoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-body">YEAR:2020</h5>
+                            <p class="card-text">Champions:Mumbai Indians</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="CSKoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2021</h5>
+                            <p class="card-text">Champions:Chennai Super Kings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="RRoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger text-white text-center">
+                            <h5 class="card-title">YEAR:2022</h5>
+                            <p class="card-text">Champions:Gujarat Titans</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="CSKoutline.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success text-white text-center">
+                            <h5 class="card-title">YEAR:2023</h5>
+                            <p class="card-text">Champions:Chennai Super Kings</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <div class="bottomdiv">
-        <b>Copyrights @2024 and Developed by SETHUKKARASI C(212223230201)</b>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
 ```
 
 ## OUTPUT:
-![outputs](output1.png)
-![outputs](output2.png) 
-![outputs](output3.png) 
-![outputs](output4.png)
-
+![outputs](1output.png)
+![outputs](2output.png) 
+![outputs](3output.png) 
+![outputs](4output.png) 
+![outputs](5output.png) 
+![outputs](6output.png) 
+![outputs](7output.png)
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
